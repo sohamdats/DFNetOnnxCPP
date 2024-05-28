@@ -48,4 +48,4 @@ Note:
 **Future Work**
 
 1. Curerntly audio files are shortened to 30 secs to facilitate low latency. Online streaming can be used to improve the latency.
-2. Need to debug segmentation fault for longer files appearing in some cases. 
+2. Need to debug segmentation faults that are appearing in some cases for longer audio files. 
