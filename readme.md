@@ -40,7 +40,9 @@ For example,
 ./audioCPPNoiseRemoval /Users/folder/audioCPPNoiseRemoval/denoiser_model.onnx /Users/folder/audioCPPNoiseRemoval/Kal_Ho_Na_ho_Deb.wav ../enhanced_audio.wav
 ```
 
-Note: The input audio files should be in "wav" format and sample rate should be 48000 Hz. If the sampling rate is not 48000 Hz, the resample code in resample.py in the repo can be used to upsample the audio file. 
+Note: 
+1. The input audio files should be in "wav" format. 
+2. Sample rate should be 48000 Hz. Use **resample.py** to upsample if sr is not 48k. 
 
 
 **Future Work**
