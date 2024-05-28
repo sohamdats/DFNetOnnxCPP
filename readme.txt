@@ -9,3 +9,4 @@ output_audio = "/Users/sohamdatta/CLionProjects/audioCPPNoiseRemoval/enhanced_au
 ./audioCPPNoiseRemoval /Users/sohamdatta/CLionProjects/audioCPPNoiseRemoval/denoiser_model.onnx /Users/sohamdatta/CLionProjects/audioCPPNoiseRemoval/Kal_Ho_Na_ho_Deb.wav ../enhanced_audio.wav
 
 ./audioCPPNoiseRemoval /Users/sohamdatta/CLionProjects/audioCPPNoiseRemoval/denoiser_model.onnx /Users/sohamdatta/CLionProjects/audioCPPNoiseRemoval/sample1.wav ../enhanced_audio.wav
+
