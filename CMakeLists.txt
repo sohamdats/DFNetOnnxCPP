@@ -2,11 +2,18 @@ cmake_minimum_required(VERSION 3.28)
 project(audioCPPNoiseRemoval)
 
 set(CMAKE_CXX_STANDARD 17)
+#execute_process(
+#        COMMAND python -c "import torch;print(torch.utils.cmake_prefix_path)"
+#        OUTPUT_VARIABLE TORCH_CMAKE_PREFIX_PATH
+#        OUTPUT_STRIP_TRAILING_WHITESPACE
+#)
+
+# Append the paths obtained from the Python script to CMAKE_PREFIX_PATH
+#list(APPEND CMAKE_PREFIX_PATH ${TORCH_CMAKE_PREFIX_PATH})
+# find_package(Torch REQUIRED)
+# set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${TORCH_CXX_FLAGS}")
 
 add_executable(audioCPPNoiseRemoval main.cpp)
-target_include_directories(audioCPPNoiseRemoval PUBLIC ${TORCH_INCLUDE_DIRS})
-# Link libraries
-target_link_libraries(audioCPPNoiseRemoval PUBLIC ${TORCH_LIBRARIES})
 
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 
