@@ -1,0 +1,21 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja "-DCMAKE_TOOLCHAIN_FILE=/Users/sohamdatta/.vcpkg-clion/vcpkg (1)/scripts/buildsystems/vcpkg.cmake" -G Ninja -S /Users/sohamdatta/CLionProjects/audioCPPNoiseRemoval -B /Users/sohamdatta/CLionProjects/audioCPPNoiseRemoval/cmake-build-debug
+CMake Error at /Users/sohamdatta/.vcpkg-clion/vcpkg (1)/scripts/buildsystems/vcpkg.cmake:859 (_find_package):
+  By not providing "FindTorch.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "Torch", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "Torch" with any of
+  the following names:
+
+    TorchConfig.cmake
+    torch-config.cmake
+
+  Add the installation prefix of "Torch" to CMAKE_PREFIX_PATH or set
+  "Torch_DIR" to a directory containing one of the above files.  If "Torch"
+  provides a separate development package or SDK, be sure it has been
+  installed.
+Call Stack (most recent call first):
+  CMakeLists.txt:13 (find_package)
+
+
+-- Configuring incomplete, errors occurred!
